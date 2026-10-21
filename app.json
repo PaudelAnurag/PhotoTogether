@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "PhotoTogether",
+    "slug": "phototogether",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.phototogether.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false,
+      "package": "com.phototogether.app"
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "phototogether",
+    "plugins": [
+      "expo-router",
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "PhotoTogether uses the camera to take your photos."
+        }
+      ],
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow PhotoTogether to read your photos.",
+          "savePhotosPermission": "Allow PhotoTogether to save photos to your library."
+        }
+      ],
+      [
+        "expo-splash-screen",
+        {
+          "backgroundColor": "#6B3FC0",
+          "resizeMode": "contain"
+        }
+      ],
+      "expo-image",
+      "expo-mail-composer",
+      "expo-sharing",
+      "expo-status-bar",
+      "expo-font"
+    ]
+  }
+}
